@@ -64,7 +64,7 @@ body {
 }
 
 
-#btn-isTriangle {
+#btn-isTriangle, #submit-answer-btn, #btn-hypotenuse, #btn-area{
 
     margin: 1rem auto;
     width: 100%;
@@ -76,7 +76,7 @@ body {
     border-radius: 0.2rem;
 }
 
-#output {
+#output, #output-quiz, #output-hypotenuse, #output-area {
     margin: 1rem auto;
     color: var(--text-color);
     text-align: center;
@@ -84,3 +84,20 @@ body {
 
 }
 
+
+.question-container {
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+
+.formula-container {
+    border: 2px solid var(--primary-color);
+    padding: 1rem;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin: 0.5rem 0rem;
+}
