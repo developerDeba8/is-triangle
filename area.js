@@ -6,7 +6,7 @@ function calculateTriangleArea() {
     console.log(Number(inputBaseHeight[0].value), Number(inputBaseHeight[1].value));
     const areaOfTriangle = 0.5 * (Number(inputBaseHeight[0].value) * Number(inputBaseHeight[1].value));
     console.log(areaOfTriangle);
-    outputAreaElement.innerText = "The area of the triangle is " + areaOfTriangle + " cm²";
+    outputAreaElement.innerText = "The area of the triangle is " + areaOfTriangle.toFixed(2) + " cm²";
 }
 
 
