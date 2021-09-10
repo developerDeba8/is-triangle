@@ -7,6 +7,12 @@ function calculateTriangleArea() {
         outputAreaElement.innerText = "All fields are mandatory";
         return;
     }
+
+    if(inputBaseHeight[0].value < 0 || inputBaseHeight[1].value < 0){
+        outputAreaElement.innerText = "Only positive values are allowed";
+        return;
+    }
+
     console.log(Number(inputBaseHeight[0].value), Number(inputBaseHeight[1].value));
     const areaOfTriangle = 0.5 * (Number(inputBaseHeight[0].value) * Number(inputBaseHeight[1].value));
     console.log(areaOfTriangle);

@@ -13,6 +13,11 @@ function isTriangle(){
         output.innerText = "All fields are mandatory";
         return;
     }
+
+    if(inputs[0].value < 0 || inputs[1].value < 0 || inputs[2].value < 0){
+        output.innerText = "Only positive values are allowed";
+        return;
+    }
     
     console.log(Number(inputs[0]), Number(inputs[1]), Number(inputs[2]));
 
