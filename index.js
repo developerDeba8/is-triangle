@@ -8,6 +8,11 @@ function sumOfAngles(angle1, angle2, angle3){
 }
 
 function isTriangle(){
+
+    if(inputs[0].value == "" || inputs[1].value == "" || inputs[2].value == ""){
+        output.innerText = "All fields are mandatory";
+        return;
+    }
     
     console.log(Number(inputs[0]), Number(inputs[1]), Number(inputs[2]));
 

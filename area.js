@@ -3,6 +3,10 @@ const areaButton = document.querySelector('#btn-area');
 const outputAreaElement = document.querySelector('#output-area');
 
 function calculateTriangleArea() {
+    if(inputBaseHeight[0].value == "" || inputBaseHeight[1].value == ""){
+        outputAreaElement.innerText = "All fields are mandatory";
+        return;
+    }
     console.log(Number(inputBaseHeight[0].value), Number(inputBaseHeight[1].value));
     const areaOfTriangle = 0.5 * (Number(inputBaseHeight[0].value) * Number(inputBaseHeight[1].value));
     console.log(areaOfTriangle);

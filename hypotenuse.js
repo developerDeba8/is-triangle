@@ -7,6 +7,10 @@ function calculateSumOfSquares(length1, length2){
 }
 
 function calculateHypotenuse(){
+    if(inputSides[0].value == "" || inputSides[1].value == ""){
+        outputHypotenuseElement.innerText = "All fields are mandatory";
+        return;
+    }
     const sumOfSquares = calculateSumOfSquares(Number(inputSides[0].value), Number(inputSides[1].value));
     const hypotenuseLength = Math.sqrt(sumOfSquares).toFixed(2);
     outputHypotenuseElement.innerText = "The length of the hypotenuse is " + hypotenuseLength + " cm";
